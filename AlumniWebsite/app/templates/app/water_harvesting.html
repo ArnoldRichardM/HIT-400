@@ -1,0 +1,79 @@
+{% extends 'app/layout.html' %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="row" style="padding: 50px 0 50px;">
+    <div class="col-lg-6">
+        <img src="{% static 'app/images/gallery/demo/cet4.png' %}" />
+    </div>
+    <div class="col-lg-6">
+        <h2>{{ title }}</h2>
+        <div style="font-size: large; text-align: justify;">
+            Projects to be involved
+        </div>
+    </div>
+</div>
+<hr />
+
+<div class="row" style="padding: 50px 0 50px;">
+    <div class="col-lg-4">
+        <h2>Why Get Involved?</h2>
+        <div style="font-size: large; text-align: justify;">
+            Its fun <strong></strong>.
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <img src="{% static 'app/images/gallery/demo/cet4.png' %}" />
+        <img src="{% static 'app/images/gallery/demo/cet4.png' %}" />
+    </div>
+</div>
+<hr />
+
+<div class="row" style="padding: 50px 0 50px;">
+    <div class="col-lg-4">
+        <img src="{% static 'app/images/gallery/demo/cet4.png' %}" width="300" />
+    </div>
+    <div class="col-lg-4">
+        <h2>Other Projects</h2>
+        <div style="font-size: large; text-align: justify;">
+            Project details
+        </div>
+    </div>
+    <div class="col-lg-4" style="padding-top: 30px;">
+        <img src="{% static 'app/images/gallery/demo/cet4.png' %}" width="300" />
+    </div>
+</div>
+<hr />
+
+<div class="row" style="padding: 50px 0 50px;">
+    <div class="col-lg-12">
+        <h2>Other Projects</h2>
+        <br />
+        <div style="font-size: large; text-align: justify;">
+            Detail
+            <a href="#join-btn">Feel free to Volunteer</a>
+        </div>
+    </div>
+</div>
+<hr />
+
+<div class="row text-center" style="padding: 50px 0 50px;" id="join-btn">
+    <button class="btn btn-lg btn-success" style="font-size: xx-large; padding: 30px;"
+            data-toggle="collapse" data-target="#contribute" aria-expanded="false" aria-controls="contribute">
+        Join Now!
+    </button>
+    <div class="row collapse" style="padding-top: 50px;" id="contribute">
+        <div class="col-lg-4 text-center">
+            <button class="btn btn-lg btn-primary">Volunteer to Spread the Word</button>
+        </div>
+        <div class="col-lg-4 text-center">
+            <button class="btn btn-lg btn-danger"  >Queries</button>
+        </div>
+        <div class="col-lg-4 text-center">
+            <button class="btn btn-lg btn-info"  >Need any help?</button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<h2>HITA</h2>
+<p>Use this area to provide additional information.</p>
+
+<hr />
+
+<h3>Our Expanding Horizons</h3>
+<p class="font-large">
+    Our thoughts and capabilities keep growing, and so does the HIT. 
+</p>
+
+<div class="row" style="background-color: #333333; margin: 30px;">
+    <div id="carousel-home" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-home" data-slide-to="1"></li>
+            <li data-target="#carousel-home" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="text-center">
+                    <img width="1000" height="500" src="{% static 'app/images/gallery/demo/pex9.jpeg' %}" alt="School">
+                </div>
+                <div class="carousel-caption">
+                    <h3>HITA Today</h3>
+                    <strong>We have Events Comming Up</strong> 
+                </div>
+            </div>
+            <div class="item">
+                <div class="text-center">
+                    <img width="1000" height="500" src="{% static 'app/images/gallery/demo/pex9.jpeg' %}" alt="School">
+                </div>
+                <div class="carousel-caption">
+                    <h3>HITA Today</h3>
+                    <strong></strong> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-home" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-home" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<hr />
+
+<h3>Welcome To HITA</h3>
+<p class="font-large text-justify">
+    <strong>Success through inovation</strong>.<br />
+
+    <a href="https://www.hit.ac.zw/" target="_blank">
+        Know more about HIT, Visit our Website
+    </a>
+</p>
+
+<div class="row">
+    <!-- Meant for some images as collage, good display, but later -->
+</div>
+
+
+{% endblock %}
